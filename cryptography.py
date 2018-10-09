@@ -31,8 +31,9 @@ d = "Message: +KF;B(CH=NIZ}m;R\Dt"
 q = "Goodbye!"
 
 
+#
+
 option = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-if option == z:
 
 option = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
