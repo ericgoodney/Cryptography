@@ -25,29 +25,9 @@ Goodbye!
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-z = "Did not understand command, try again."
-e = "Message: Two plus two = Five"
-d = "Message: +KF;B(CH=NIZ}m;R\Dt"
-q = "Goodbye!"
+a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-
-#
-
-option = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-
-option = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-
-option = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-
-option = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-
-
-
-
-
-
-
-
-
-
-
+if a == "e" or "d":
+        b = input ("Message: ")
+        c = input ("Key: ")
+    
