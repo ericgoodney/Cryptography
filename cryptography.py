@@ -25,9 +25,12 @@ Goodbye!
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-a = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-if a == "e" or "d":
-        b = input ("Message: ")
-        c = input ("Key: ")
+if m !="e" and m !="d" and m !="q":
+    print("Did not understand command, try again.")
     
+if
+    
+if m == "q":
+    print( "Goodbye!")
