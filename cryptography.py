@@ -31,7 +31,7 @@ while m !="e" and m !="d" and m !="q":
     print("Did not understand command, try again.")
     m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     
-elif m == "q":
+if m == "q":
     print("Goodbye!")
     
 
