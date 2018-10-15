@@ -30,7 +30,8 @@ m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 if m !="e" and m !="d" and m !="q":
     print("Did not understand command, try again.")
     
-
-    
-if m == "q":
+elif m == "q":
     print( "Goodbye!")
+    
+elif m == "e"
+    
