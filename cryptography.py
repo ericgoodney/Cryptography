@@ -25,6 +25,8 @@ Goodbye!
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
+
+
 m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 while m !="e" and m !="d" and m !="q":
@@ -33,6 +35,39 @@ while m !="e" and m !="d" and m !="q":
     
 if m == "q":
     print("Goodbye!")
-
-
     
+elif m == "e":
+    f = input ("Message: ")
+    s = input ("Key: ")
+    
+    message= []
+
+    for l in f:
+        n = associations.find(l)
+    message.append(n)
+
+
+elif m == "d":
+    f = input ("Message: ")
+    s = input ("Key: ")
+    
+    message= []
+    
+    
+"""
+associations.find(m)
+
+associations[index]
+
+        message= []
+        for n in b:
+         d = associations.find(n)
+         message.append(d)
+    
+        key1 = []
+        for n in c:
+            e = associations.find(n)
+            key1.append(e)
+        
+"""
+
