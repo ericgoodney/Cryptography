@@ -45,6 +45,11 @@ elif m == "e":
     for l in f:
         n = associations.find(l)
     message.append(n)
+    
+    fkey= []
+    for l in s:
+        p = associations.find(l)
+        fkey.append(p)
 
 
 elif m == "d":
