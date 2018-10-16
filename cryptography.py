@@ -45,12 +45,19 @@ elif action == "e":
     for l in m:
         c = associations.find(l)
     message.append(c)
+
+#searches through message
     
     mkey= []
     for l in k:
         f = associations.find(l)
     mkey.append(l)
-        
+    
+#serches through key
+    
+print(c)       
+print(f)
+print(c+f)
 
     
 
