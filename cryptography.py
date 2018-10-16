@@ -25,16 +25,16 @@ Goodbye!
 """
 associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .,:;'\"/\\<>(){}[]-=_+?!"
 
-
-
 action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 while action !="e" and m !="d" and m !="q":
     print("Did not understand command, try again.")
     action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+
+if action == "q":
+        print("Goodbye!")
     
-    
-elif action == "e":
+elif  action == "e":
     m = input("Message: ")
     k = input("Key: ")
     
@@ -52,12 +52,6 @@ elif action == "e":
         mkey.append(f)
     
 #serches through key
-
-
-
-if action == "q":
-    print("Goodbye!")
-
 
 elist = list(zip(message,mkey))
 print(elist)
