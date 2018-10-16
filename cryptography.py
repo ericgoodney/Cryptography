@@ -27,29 +27,32 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 
 
-m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-while m !="e" and m !="d" and m !="q":
+while action !="e" and m !="d" and m !="q":
     print("Did not understand command, try again.")
-    m = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     
-if m == "q":
+if action == "q":
     print("Goodbye!")
     
-elif m == "e":
-    f = input ("Message: ")
-    s = input ("Key: ")
+elif action == "e":
+    m = input("Message: ")
+    k = input("Key: ")
     
-    message= []
+    message = []
 
-    for l in f:
-        n = associations.find(l)
-    message.append(n)
+    for l in m:
+        c = associations.find(l)
+    message.append(c)
     
-    fkey= []
-    for l in s:
-        p = associations.find(l)
-        fkey.append(p)
+    mkey= []
+    for l in k:
+        f = associations.find(l)
+    mkey.append(l)
+        
+
+    
 
     
   
