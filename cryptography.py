@@ -27,12 +27,12 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-while action !="e" and m !="d" and m !="q":
+while action !="e" and action !="d" and action !="q":
     print("Did not understand command, try again.")
     action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-
+    
 if action == "q":
-        print("Goodbye!")
+    print("Goodbye!")
     
 elif  action == "e":
     m = input("Message: ")
@@ -67,7 +67,3 @@ for c in elist:
 print(mkey)
 print(message+mkey)
 """
-
-    
-  
-    
