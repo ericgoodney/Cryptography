@@ -44,20 +44,22 @@ elif action == "e":
 
     for l in m:
         c = associations.find(l)
-    message.append(c)
+        message.append(c)
 
 #searches through message
     
     mkey= []
     for l in k:
         f = associations.find(l)
-    mkey.append(l)
+        mkey.append(f)
     
 #serches through key
-    
-print(c)       
-print(f)
-print(c+f)
+
+print(message)       
+print(mkey)
+print(message+mkey)
+
+#print a list of list of zip of 
 
     
 
