@@ -67,11 +67,11 @@ print(elist)
 
 for c in elist:
     print(c[0]+c[1])
-    
+  
+"""  
     lenmessage/len key
     importmath
-    
-    
+"""
 
     
   
