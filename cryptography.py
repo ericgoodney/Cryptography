@@ -61,14 +61,15 @@ print(mkey)
 print(message+mkey)
 """
 
-
-print("k")
     
 elist = list(zip(message,mkey))
 print(elist)
 
 for c in elist:
     print(c[0]+c[1])
+    
+    lenmessage/len key
+    importmath
     
     
 
