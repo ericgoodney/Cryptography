@@ -55,10 +55,18 @@ elif action == "e":
     
 #serches through key
 
+y=message
+z=mkey
+
+
 print(message)       
 print(mkey)
 print(message+mkey)
+zip(y,z)
 
+
+
+How tf do I zip
 #print a list of list of zip of 
 
     
