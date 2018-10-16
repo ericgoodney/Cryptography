@@ -51,28 +51,6 @@ elif m == "e":
         p = associations.find(l)
         fkey.append(p)
 
-
-elif m == "d":
-    f = input ("Message: ")
-    s = input ("Key: ")
     
-    message= []
+  
     
-    
-"""
-associations.find(m)
-
-associations[index]
-
-        message= []
-        for n in b:
-         d = associations.find(n)
-         message.append(d)
-    
-        key1 = []
-        for n in c:
-            e = associations.find(n)
-            key1.append(e)
-        
-"""
-
