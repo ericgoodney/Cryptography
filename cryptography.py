@@ -33,8 +33,6 @@ while action !="e" and m !="d" and m !="q":
     print("Did not understand command, try again.")
     action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     
-if action == "q":
-    print("Goodbye!")
     
 elif action == "e":
     m = input("Message: ")
@@ -55,13 +53,12 @@ elif action == "e":
     
 #serches through key
 
-"""
-print(message)       
-print(mkey)
-print(message+mkey)
-"""
 
-    
+
+if action == "q":
+    print("Goodbye!")
+
+
 elist = list(zip(message,mkey))
 print(elist)
 
@@ -71,6 +68,10 @@ for c in elist:
 """  
     lenmessage/len key
     importmath
+    
+    print(message)       
+print(mkey)
+print(message+mkey)
 """
 
     
