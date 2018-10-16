@@ -55,18 +55,27 @@ elif action == "e":
     
 #serches through key
 
-y=message
-z=mkey
+ylist=c
+zlist=f
 
-
+"""
 print(message)       
 print(mkey)
 print(message+mkey)
-zip(y,z)
+"""
+elist = list(zip(message,mkey))
+print(elist)
+
+for c in elist:
+    print(c[0]+c[1])
+
+"""
+elist = list(zip(ylist, zlist))
+elist = list(zip(y,x))
+"""
 
 
 
-How tf do I zip
 #print a list of list of zip of 
 
     
