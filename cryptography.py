@@ -70,8 +70,11 @@ print(elist)
 if action == "e":
     for c in elist:
         print(associations[c[0]+c[1]])
+#-------------------------------------------------------------------------------
+
+
 
 if action == "d":
     for c in elist:
-        print(associations[c[1]-c[0]])
+        print(associations[c[0]-c[1]])
 
