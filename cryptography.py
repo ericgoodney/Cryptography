@@ -30,11 +30,22 @@ action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 while action !="e" and action !="d" and action !="q":
     print("Did not understand command, try again.")
     action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
-    
+#-------------------------------------------------------------------------------
 if action == "q":
     print("Goodbye!")
-    
-elif  action == "e":
+#-------------------------------------------------------------------------------
+
+#trying to make key longer than message
+"""
+if k < m:
+# int(m%k)
+# 
+# example: message is 5 and key is 4
+#find remainder of m/k. round up to next whole number, and multilpy k by that number. 
+
+"""
+#-------------------------------------------------------------------------------
+if action == "e" or "d":
     m = input("Message: ")
     k = input("Key: ")
     
@@ -56,8 +67,11 @@ elif  action == "e":
 elist = (list(zip(message,mkey)))
 print(elist)
 
-for c in elist:
-    print(associations[c[0]+c[1]])
+if action == "e":
+    for c in elist:
+        print(associations[c[0]+c[1]])
 
-
+if action == "d":
+    for c in elist:
+        print(associations[c[1]-c[0]])
 
