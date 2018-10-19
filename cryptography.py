@@ -38,8 +38,8 @@ if action == "q":
 #trying to make key longer than message
 """
 if k < m:
-# int(m%k)
-# 
+# newkey= k
+# k= k + newkey
 # example: message is 5 and key is 4
 #find remainder of m/k. round up to next whole number, and multilpy k by that number. 
 
