@@ -64,13 +64,30 @@ if action == "e" or "d":
     
 #serches through key
 
-elist = (list(zip(message,mkey)))
+q = len("Message")
+r = len("Key")
+        
+key = mkey*int((q/r))
+remainders = q%r
+        
+if remainders != 0:
+    remainder = range(remainders)
+    for h in remainder:
+        key.append(mkey[h])
+
+
+elist = (list(zip(message,key)))
 print(elist)
+
 
 if action == "e":
     for c in elist:
         g = associations[c[0]+c[1]]
         print(g)
+        
+#working on this...
+for n in elist:
+    print(n,end="")
 #-------------------------------------------------------------------------------
 
 if action == "d":
@@ -78,4 +95,9 @@ if action == "d":
         gg = associations[c[0]-c[1]]
         print(gg)
 #-------------------------------------------------------------------------------
+
+result = []
+
+for n in result:
+    print(n,end="")
 
