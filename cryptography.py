@@ -38,22 +38,35 @@ if action == "e" or "d":
     m = input("Message: ")
     k = input("Key: ")
     
-    message = []
-
-    for l in m:
-        c = associations.find(l)
-        message.append(c)
+message = []
+for l in m:
+    c = associations.find(l)
+    message.append(c)
 
 #searches through message
+
+mkey = []
+for l in k:
+    f = associations.find(l)
+    mkey.append(f)
     
-    mkey= []
-    for l in k:
-        f = associations.find(l)
-        mkey.append(f)
     
+L1 = len(message)
+L2 = len(mkey)
+
+rkey = mkey*int((L1/L2))
+
+remainders = L1%L2 
+
+if remainders !=0:
+    remainder = range(remainders)
+    for k in remainder:
+        rkey.append(mkey[k])
+        
+        
 #serches through key
 
-elist = (list(zip(message,mkey)))
+elist = (list(zip(message,rkey)))
 print(elist)
 
 if action == "e":
