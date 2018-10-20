@@ -34,17 +34,6 @@ while action !="e" and action !="d" and action !="q":
 if action == "q":
     print("Goodbye!")
 #-------------------------------------------------------------------------------
-
-#trying to make key longer than message
-"""
-if k < m:
-# newkey= k
-# k= k + newkey
-# example: message is 5 and key is 4
-#find remainder of m/k. round up to next whole number, and multilpy k by that number. 
-
-"""
-#-------------------------------------------------------------------------------
 if action == "e" or "d":
     m = input("Message: ")
     k = input("Key: ")
@@ -64,30 +53,13 @@ if action == "e" or "d":
     
 #serches through key
 
-q = len("Message")
-r = len("Key")
-        
-key = mkey*int((q/r))
-remainders = q%r
-        
-if remainders != 0:
-    remainder = range(remainders)
-    for h in remainder:
-        key.append(mkey[h])
-
-
-elist = (list(zip(message,key)))
+elist = (list(zip(message,mkey)))
 print(elist)
-
 
 if action == "e":
     for c in elist:
         g = associations[c[0]+c[1]]
         print(g)
-        
-#working on this...
-for n in elist:
-    print(n,end="")
 #-------------------------------------------------------------------------------
 
 if action == "d":
@@ -95,9 +67,3 @@ if action == "d":
         gg = associations[c[0]-c[1]]
         print(gg)
 #-------------------------------------------------------------------------------
-
-result = []
-
-for n in result:
-    print(n,end="")
-
