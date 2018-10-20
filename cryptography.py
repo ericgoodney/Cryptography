@@ -66,6 +66,7 @@ if remainders !=0:
         
 #serches through key
 
+result= []
 elist = (list(zip(message,rkey)))
 print(elist)
 
@@ -80,3 +81,13 @@ if action == "d":
         gg = associations[c[0]-c[1]]
         print(gg)
 #-------------------------------------------------------------------------------
+
+for l in result:
+    print(l,end="")
+    
+    
+    
+    
+    
+    
+    
