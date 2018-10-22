@@ -69,7 +69,7 @@ if remainders !=0:
 
 result= []
 elist = (list(zip(message,rkey)))
-print(elist)
+
 
 if action == "e":
     for c in elist:
