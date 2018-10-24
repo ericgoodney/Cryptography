@@ -27,9 +27,10 @@ associations = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789 .
 
 action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
-while action !="q":
-    if action !="e" or action!="d":
+if action !="e" and action!="d" and action !="q":
         print("Did not understand command, try again.")
+
+while action !="q":
     action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
     if action == "e" or "d":
         m = input("Message: ")
