@@ -64,7 +64,7 @@ while action !="q":
                 print(gg,end="")
         for l in result:
             print(l,end="")
-            print('')
+        print('')
     if action !="e" and action !="d" and action !="q":
         print("Did not understand command, try again")
     action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
