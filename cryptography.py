@@ -29,9 +29,7 @@ action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
 
 
 while action !="q":
-    if action !="e" and action!="d" and action !="q":
-        print("Did not understand command, try again.")
-        action = input("Enter e to encrypt, d to decrypt, or q to quit: ")
+    
     if action == "e" or action =="d":
         m = input("Message: ")
         k = input("Key: ")
